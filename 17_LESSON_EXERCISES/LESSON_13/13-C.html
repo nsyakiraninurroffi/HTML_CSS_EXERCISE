@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesya Kirani Nurroffi</title>
+  <!-- ini cuma diminta menganalisis desain Gmail iOS (seperti yang di kiri pada gambar) dan memecah struktur layout-nya menjadi susunan horizontal dan vertical, alias nested layout.-->
+</head>
+<body>
+  <div>
+    <h2>PERTANYAAN NO 13-C :</h2>
+    <p style="font-family: 'Courier New', Courier, monospace; height: 20px; color: green; font-weight: bold;">
+      13-C. Use nested layouts technique to break down this design into horizontal and vertical layouts.
+    </p>
+  </div>
+  <br>
+  <div>
+    <h2>JAWABAN NO 13-C :</h2>
+    <p style="font-family: Arial, Helvetica, sans-serif; height: 20px; color: black;">
+      <span
+        style="font-family: Arial, Helvetica, sans-serif; height: 20px; color: palevioletred; font-weight: bold;">Analisis
+        layout satu baris email Gmail:</span>
+      <br>
+      Desain satu baris email terdiri dari tiga bagian utama: gambar avatar, informasi email (seperti nama pengirim, judul,
+      dan cuplikan), serta waktu.
+    </p>
+  </div>
+  <br>
+  <div>
+    <p style="font-family: Arial, Helvetica, sans-serif; height: 20px; color: black;" >
+      <span style="font-family: Arial, Helvetica, sans-serif; height: 20px; color: palevioletred; font-weight: bold;">Layout ini menggunakan layout bersarang (nested layout) sebagai berikut:</span>
+      <br>
+      <ol>
+        <li>Level 1 – Layout Vertikal (display: block):</li>
+        <ol>
+          <li>avatar (gambar di kiri)</li>
+          <li>email-text (blok teks di tengah)</li>
+          <li>time (jam di kanan)</li>
+          <ul>
+            <li>Tiga elemen ini disusun secara horizontal menggunakan Flexbox.</li>
+          </ul>
+        </ol>
+        <br>
+        <li>Level 2 – Layout Vertical di dalam email-text (display: block):</li>
+        <ol>
+          <li>sender (nama pengguna, bold)</li>
+          <li>subject (judul pesan)</li>
+          <li>snippet (cuplikan pesan, abu-abu)</li>
+          <ul>
+            <li>Elemen-elemen ini disusun secara vertikal di dalam satu kolom.</li>
+          </ul>
+        </ol>
+  </div>
+
+  <div>
+    <br>
+    <h2>Struktur Bersarang Secara Visual:</h2>
+    <p style="font-family: 'Courier New', Courier, monospace; height: 20px; color: green; font-weight: bold;">
+      .email-item (flex horizontal)
+      │
+      ├── .avatar (gambar bulat)
+      ├── .email-text (vertical layout)
+      │ ├── .sender
+      │ ├── .subject
+      │ └── .snippet
+      └── .time (jam)
+    </p>
+  </div>
+<br>
+  <div>
+    <h2>Contoh Kode:</h2>
+    <p style="font-family: 'Courier New', Courier, monospace; height: 20px; color: green; font-weight: bold;">
+      <code>
+        <pre>
+          .email-item {
+            display: flex;
+            flex-direction: row;
+          }
+          .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+          }
+          .email-text {
+            display: flex;
+            flex-direction: column;
+          }
+          .time {
+            font-size: 12px;
+          }
+        </pre>
+      </code>
+    </p>
+  </div>
+  <br>
+
+<h2>KESIMPULAN :</h2>
+<p style="font-family: 'Times New Roman', Times, serif; height: 20px; color: palevioletred; font-weight: bold;">Dengan teknik layout bersarang, tampilan email disusun menggunakan kombinasi Flexbox (horizontal) untuk elemen utama dan
+layout vertikal biasa untuk isi teks, agar menyerupai tampilan aplikasi Gmail di iOS.</p>
+
+</body>
+</html>

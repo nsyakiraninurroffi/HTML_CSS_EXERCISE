@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nesya Kirani Nurroffi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+    }
+
+    .horizontal {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      border: 2px dashed #ccc;
+      margin-bottom: 20px;
+    }
+
+    .vertical {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      border: 2px dashed #999;
+    }
+
+    .box {
+      border: 1px solid #aaa;
+      padding: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .title {
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">13f - Layout Breakdown</div>
+
+  <!-- Layer 1: Horizontal -->
+  <div class="horizontal">
+    <div class="box">Foto Profil</div>
+
+    <!-- Layer 2: Vertical -->
+    <div class="vertical">
+
+      <!-- Baris 1: Horizontal -->
+      <div class="horizontal">
+        <div class="box">supersimple.dev</div>
+        <div class="box">@SuperSimpleDev</div>
+      </div>
+
+      <!-- Baris 2: Tweet -->
+      <div class="box">What is backend web development? A complete overview. New video is up!</div>
+
+      <!-- Baris 3: YouTube Preview (Horizontal) -->
+      <div class="horizontal">
+        <div class="box">Thumbnail</div>
+        <div class="vertical">
+          <div class="box">youtube.com</div>
+          <div class="box">Backend web development - a complete overview (2021)</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

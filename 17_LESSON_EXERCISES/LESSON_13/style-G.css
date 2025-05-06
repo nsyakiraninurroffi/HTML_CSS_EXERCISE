@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  border: 0px solid gray;
+  box-shadow: 1px 1px 5px gray;
+  width: 400px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.content-yt {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.vid-yt {
+  background-color: rgb(202, 202, 202);
+  height: 88px;
+  width: 90px;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 8px 0px 0px 8px;
+}

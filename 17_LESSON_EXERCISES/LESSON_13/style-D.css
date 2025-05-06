@@ -1,0 +1,28 @@
+.selector {
+  font-family: Arial;
+}
+
+.container {
+    border: 0px solid gray;
+    box-shadow: 1px 1px 5px gray;
+    width: 350px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title p {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  .clock {
+  margin-top: -10px;
+    font-size: 12px;
+    color: gray;
+  }

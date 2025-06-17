@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesya Kirani Nurroffi</title>
+  <style>
+    body{
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+}
+.container{
+  max-width: 10em;
+  margin-right: 13em;
+}
+.thumbnail img{
+  width: 21em;
+}
+.thumbnail .time{
+  position: relative;
+  top: -2.5em;
+  left: 19em;
+  background-color: black;
+  color: white;
+  width: 3em;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 15px;
+}
+.title img{
+  width: 45px;
+  border-radius: 50%;
+}
+.tooltips img{
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+}
+.tooltips-1 img{
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  margin-top: -1.1em;
+  width: 20em;
+}
+.title a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+.title .title-channel{
+  position: relative;
+  top: .4em;
+  left: .8em;
+}
+.channel{
+  width: 15em;
+  position: relative;
+  left: 3.7em;
+  top: -.5em;
+}
+.channel-1{
+  width: 15em;
+  position: relative;
+  left: 3.7em;
+  top: -1.5em;
+}
+.channel p{
+  color: gray;
+  margin: 0;
+  font-size: 15px;
+}
+.channel-1 p{
+  color: gray;
+  margin: 0;
+  font-size: 15px;
+}
+.tooltips{
+  position: absolute;
+  top: 17em;
+  left: 1.1em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px 15px;
+  width: 10em;
+  background-color: white !important;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 100;
+}
+.tooltips-1{
+  position: absolute;
+  top: 17em;
+  left: 24em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px 15px;
+  width: 10em;
+  background-color: white !important;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 100;
+}
+.profile-channel:hover ~ .tooltips{
+  opacity: 1 !important;
+}
+.profile-channel:hover ~ .tooltips-1{
+  opacity: 1 !important;
+}
+.subscribe{
+  margin-left: .8em;
+  font-size: 12px;
+  margin-top: -5px;
+}
+.subscribe-1{
+  margin-left: .8em;
+  font-size: 12px;
+  margin-top: -5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="thumbnail">
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank"><img src="thumbnail-1.webp" alt=""></a>
+      <div class="time">14:20</div>
+    </div>
+    <div class="title">
+      <a href="https://youtube.com/c/mkbhd" class="profile-channel"><img src="channel-1.jpeg"></a>
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="title-channel">Talking Tech and AI with
+        Google CEO Sundar Pichai!</a>
+      <div class="tooltips">
+        <img src="channel-1.jpeg" alt="">
+        <div class="subscribe">
+          <p style="font-weight: bold;">Marques Brownlee</p>
+          <p style="color: gray; margin-top: -7px;">15M subscribers</p>
+        </div>
+      </div>
+    </div>
+    <div class="channel">
+      <p style="margin-top: 0.8em;">Marques Brownlee</p>
+      <p style="margin-top: 8px;">3.4M views • 6 months ago</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="thumbnail">
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank"><img src="thumbnail-2.webp" alt=""></a>
+      <div class="time">8:22</div>
+    </div>
+    <div class="title">
+      <a href="https://youtube.com/c/mkbhd" class="profile-channel"><img src="channel-2.jpeg"></a>
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="title-channel">Try Not To Laugh
+        Challenge #9</a>
+      <div class="tooltips-1">
+        <img src="channel-2.jpeg" alt="">
+        <div class="subscribe-1">
+          <p style="font-weight: bold;">Markiplier</p>
+          <p style="color: gray; margin-top: -7px;">30M subscribers</p>
+        </div>
+      </div>
+    </div>
+    <div class="channel-1">
+      <p style="margin-top: 0.8em;">Markiplier</p>
+      <p style="margin-top: 8px;">19M views • 4 years ago</p>
+    </div>
+  </div>
+</body>
+</html>
